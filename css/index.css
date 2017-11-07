@@ -1,0 +1,907 @@
+html,
+body {
+  background-color: #efeff4;
+  color: #929292;
+  font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  list-style: none;
+}
+body {
+  background: #fff;
+}
+.pagePersonal:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+.pagePersonal .mui-table h4,
+.pagePersonal .mui-table h5,
+.pagePersonal .mui-table .mui-h5,
+.pagePersonal .mui-table .mui-h6,
+.pagePersonal .mui-table p {
+  margin-top: 0;
+}
+.pagePersonal .mui-table h4 {
+  line-height: 21px;
+  font-weight: 500;
+}
+.pagePersonal .mui-table .oa-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.pagePersonal .mui-table .oa-icon-star-filled {
+  color: #f14e41;
+}
+.pagePersonal .mui-icon-back:before,
+.pagePersonal .mui-icon-left-nav:before {
+  color: #fff;
+  font-size: 22px;
+}
+.pagePersonal .mui-bar-nav {
+  background-color: #4c4c59;
+}
+.pagePersonal .mui-bar .mui-icon {
+  color: #fff;
+  font-size: 16px;
+}
+.pagePersonal .mui-bar .mui-title {
+  color: #fff;
+}
+.pagePersonal .mui-bar-nav {
+  box-shadow: none;
+}
+.pagePersonal .mui-bar-nav ~ .mui-content {
+  padding-top: 0px;
+}
+.pagePersonal .mui-content > .mui-table-view:first-child {
+  margin-top: 0px;
+}
+.pagePersonal .mui-table-view-cell:after {
+  left: 0;
+}
+.pagePersonal .mui-table-view-cell {
+  padding: 0px;
+}
+.pagePersonal .save {
+  float: right;
+  font-size: 16px;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pagePersonal .mui-bar-nav ~ .mui-content {
+  padding-top: 44px;
+}
+.pagePersonal .mui-scroll-wrapper {
+  overflow: auto;
+}
+.pagePersonal .section {
+  height: 200px;
+  position: relative;
+  margin-bottom: -4px;
+}
+.pagePersonal .section .mohu {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.pagePersonal .section .mohu .coverag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: #000;
+  opacity: .8;
+}
+.pagePersonal .section .mohu img {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-filter: blur(5px);
+  -webkit-transform: translate(-50%, -50%);
+}
+.pagePersonal .section .headerImage {
+  z-index: 10;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 15px #fff;
+  -webkit-box-shadow: 0 0 15px #fff;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.pagePersonal .section .headerImage img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.pagePersonal .section .nameLev {
+  position: absolute;
+  top: 79%;
+  left: 50%;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.pagePersonal .section .nameLev p {
+  text-align: center;
+  color: #fff;
+  font-weight: inherit;
+  line-height: 30px;
+}
+.pagePersonal .code {
+  width: 100%;
+  margin-top: 5px;
+}
+.pagePersonal .code ul {
+  width: 100%;
+  overflow: hidden;
+}
+.pagePersonal .code ul li {
+  height: 56px;
+  overflow: hidden;
+  border-bottom: 1px solid #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.pagePersonal .code ul li .codeLeft {
+  float: left;
+  line-height: 56px;
+  color: #333333;
+}
+.pagePersonal .code ul li .codeLeft i {
+  margin-right: 10px;
+  width: 18px;
+  height: 20px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../images/icon01.png") no-repeat;
+  background-size: 100%;
+}
+.pagePersonal .code ul li .codeRight {
+  float: right;
+  line-height: 56px;
+  color: #0a426a;
+}
+.pagePersonal .code ul li .age i {
+  margin-right: 10px;
+  background: url("../images/icon02.png") no-repeat;
+  background-size: 100%;
+}
+.pagePersonal .code ul li .ageRight {
+  position: relative;
+  float: right;
+  line-height: 56px;
+}
+.pagePersonal .code ul li .ageRight select {
+  height: 30px;
+  padding: 0 8px;
+  color: #0a426a;
+  padding-right: 26px;
+  background: url("../images/icon07.png") no-repeat 56px;
+  background-color: #f2f2f2;
+  background-size: 15px;
+}
+.pagePersonal .code ul li .gender i {
+  margin-right: 10px;
+  width: 18px;
+  height: 26px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../images/icon03.png") no-repeat;
+  background-size: 100%;
+}
+.pagePersonal .code ul li .genderRight select {
+  height: 30px;
+  padding: 0 8px;
+  color: #0a426a;
+  padding-right: 25px;
+  background: url("../images/icon07.png") no-repeat 30px;
+  background-color: #f2f2f2;
+  background-size: 15px;
+}
+.pagePersonal .code ul li .industry i {
+  margin-right: 10px;
+  width: 18px;
+  height: 20px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../images/icon04.png") no-repeat;
+  background-size: 100%;
+}
+.pagePersonal .code ul li .industryRight select {
+  height: 30px;
+  padding: 0 8px;
+  color: #0a426a;
+  padding-right: 25px;
+  background: url("../images/icon07.png") no-repeat 44px;
+  background-color: #f2f2f2;
+  background-size: 15px;
+}
+.pagePersonal .code ul li .region i {
+  margin-right: 10px;
+  width: 18px;
+  height: 26px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../images/icon05.png") no-repeat;
+  background-size: 100%;
+}
+.pagePersonal .code ul li .regionRight {
+  margin-left: 10px;
+}
+.pagePersonal .code ul li .regionRight select {
+  margin-left: 5px;
+  height: 30px;
+  padding: 0 8px;
+  color: #0a426a;
+  padding-right: 7px;
+  background: url("../images/icon07.png") no-repeat right;
+  background-color: #f2f2f2;
+  background-size: 15px;
+}
+.pagePersonal .code ul li .zz select {
+  padding-right: 20px;
+}
+.pagePersonal .code ul li .like i {
+  margin-right: 10px;
+  width: 18px;
+  height: 22px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../images/icon06.png") no-repeat;
+  background-size: 100%;
+}
+.pagePersonal .code ul li .likeRight input {
+  width: 100px;
+  padding: 0 5px;
+  height: 30px;
+  border: 0px;
+  font-size: 14px;
+  color: #0a426a;
+  background: #f2f2f2;
+}
+.pagePersonal .code ul li span {
+  float: right;
+  line-height: 56px;
+  padding-left: 2px;
+  padding-top: 2px;
+  font-size: 15px;
+  color: #0a426a;
+}
+.pagePersonal .code ul li.diqu {
+  height: 61px;
+}
+.pagePersonal .code ul li.diqu .region {
+  line-height: 61px;
+}
+.pagePersonal .code ul li.diqu div {
+  width: 50%;
+  float: right;
+  height: 61px;
+}
+.pagePersonal .code ul li.diqu div .regionRight {
+  width: 100%;
+  height: 50%;
+  line-height: 0px;
+}
+.pagePersonal .code ul li.diqu div .regionRight select {
+  margin-left: 0px;
+}
+.pagePersonal .moreFriend {
+  display: none;
+}
+.pagePersonal .moreFriend .zheFriend {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .5;
+  z-index: 50;
+}
+.pagePersonal .moreFriend .zheBig {
+  z-index: 50;
+  width: 200px;
+  height: 220px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.pagePersonal .moreFriend .zheBig img {
+  margin-top: 30px;
+  width: 70%;
+}
+.pagePersonal .moreFriend .zheBig p {
+  color: #4e4e4e;
+  line-height: 34px;
+  font-size: 15px;
+}
+.advertis {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.advertis input[type=color],
+.advertis input[type=date],
+.advertis input[type=datetime-local],
+.advertis input[type=datetime],
+.advertis input[type=email],
+.advertis input[type=month],
+.advertis input[type=number],
+.advertis input[type=password],
+.advertis input[type=search],
+.advertis input[type=tel],
+.advertis input[type=text],
+.advertis input[type=time],
+.advertis input[type=url],
+.advertis input[type=week],
+.advertis select,
+.advertis textarea {
+  margin-bottom: 0;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 0px;
+}
+.advertis .top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 44px;
+  background: #4c4c59;
+}
+.advertis .top > div {
+  padding-left: 12px;
+  padding-right: 10px;
+  float: left;
+  color: #fff;
+  line-height: 44px;
+}
+.advertis .top > div i {
+  width: 11px;
+  height: 25px;
+  padding-left: 10px;
+  margin-right: 4px;
+  margin-top: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  background: url("../images/icon70.png") no-repeat;
+  background-size: 100%;
+}
+.advertis .top h1 {
+  font-size: 17px;
+  color: #fff;
+  margin: 0;
+  width: auto;
+  text-align: center;
+  font-weight: 500;
+  line-height: 44px;
+  position: absolute;
+  right: 40px;
+  left: 40px;
+}
+.advertis .contents .addText {
+  position: relative;
+  padding-top: 44px;
+}
+.advertis .contents .addText textarea {
+  width: 100%;
+  height: 90px;
+  border: none;
+}
+.advertis .contents .addText > div.addimg {
+  overflow: hidden;
+}
+.advertis .contents .addText > div.addimg ul {
+  padding: 0 10px;
+  overflow: hidden;
+  float: left;
+}
+.advertis .contents .addText > div.addimg ul li:first-child {
+  margin-left: 0;
+}
+.advertis .contents .addText > div.addimg ul li {
+  width: 63px;
+  height: 63px;
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.advertis .contents .addText > div.addimg ul li > img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.advertis .contents .addText > div.addimg ul li:last-child {
+  position: relative;
+  border: 2px solid #d9d9d9;
+  background: url("../images/icon59.png") no-repeat center;
+  display: inline-block;
+  margin-right: 0;
+}
+.advertis .contents .addText > div.addimg ul li:last-child input {
+  border-style: none;
+  cursor: pointer;
+  width: 63px;
+  height: 63px;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.advertis .contents ul {
+  color: #333333;
+}
+.advertis .contents ul .firstL {
+  line-height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.advertis .contents ul .firstL i {
+  width: 20px;
+  height: 28px;
+  display: inline-block;
+  background: url("../images/icon68.png") no-repeat;
+  vertical-align: middle;
+  overflow: hidden;
+  background-size: 100%;
+}
+.advertis .contents ul .secondL {
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 70px;
+  border-top: 1px solid #e6e6e6;
+}
+.advertis .contents ul .secondL span {
+  border: 1px solid #ccc;
+  padding: 7px 7px;
+  margin-left: 6px;
+}
+.advertis .contents ul .secondL .active {
+  border-color: #ee4f19;
+  box-shadow: 0 0 3px #ee4f19;
+}
+.advertis .contents ul .thirdL {
+  padding-left: 15px;
+  margin-right: 15px;
+  line-height: 60px;
+  border-top: 1px solid #e6e6e6;
+}
+.advertis .contents ul .thirdL span {
+  margin-top: 15px;
+  float: right;
+  margin-right: 5px;
+  line-height: 28px;
+  cursor: pointer;
+  text-align: center;
+  width: 31px;
+  height: 32px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+}
+.advertis .contents ul .thirdL input {
+  margin-top: 14px;
+  width: 50px;
+  height: 33px;
+  float: right;
+  display: inline-block;
+  margin-right: 5px;
+  line-height: 17px;
+  padding: 3px 5px;
+  border: 1px solid #ccc;
+}
+.advertis .contents ul .fourL {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-right: 15px;
+  border-top: 1px solid #e6e6e6;
+}
+.advertis .contents ul .fourL p {
+  line-height: 32px;
+  color: #707070;
+  font-size: 17px;
+}
+.advertis .contents ul .fourL p i {
+  font-style: normal;
+  color: #ec3c00;
+}
+.advertis .contents ul .fourL div {
+  float: right;
+  color: #4e4e4e;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.advertis .contents ul .fourL div i {
+  font-style: normal;
+  color: #ec3c00;
+}
+.advertis .footer {
+  width: 100%;
+  margin-top: 32px;
+  padding-bottom: 50px;
+}
+.advertis .footer button {
+  display: block;
+  font-size: 17px;
+  background: #4c4c59;
+  color: #fff;
+  margin: 0 auto;
+  width: 75%;
+}
+.advertis .zhe {
+  width: 100%;
+  position: fixed;
+  background: rgba(76, 76, 76, 0.7);
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.advertis .zhe .showed {
+  width: 100%;
+  height: 232px;
+}
+.advertis .zhe .wenzi {
+  font-size: 16px;
+  position: relative;
+  height: 36%;
+  width: 100%;
+}
+.advertis .zhe .wenzi p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.advertis .zhe .modeFooter {
+  width: 100%;
+  height: 64%;
+  background: #fff;
+  padding: 0 15px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+.advertis .zhe .modeFooter > p {
+  color: #333333;
+  line-height: 43px;
+  font-size: 15px;
+}
+.advertis .zhe .modeFooter ul {
+  overflow: hidden;
+}
+.advertis .zhe .modeFooter ul li {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.advertis .zhe .modeFooter ul li a {
+  width: 66%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 13px #c5bebe;
+  border-radius: 5px;
+  padding: 13% 13%;
+  background: #f2f2f2;
+}
+.advertis .zhe .modeFooter ul li p {
+  line-height: 35px;
+}
+.advertis .zhe .modeFooter ul li img {
+  width: 100%;
+}
+.circleFriends .circleLocation {
+  float: left;
+  line-height: 46px;
+  margin-left: 15px;
+}
+.circleFriends .circleLocation i {
+  width: 14px;
+  height: 27px;
+  display: inline-block;
+  background: url("../images/icon10.png") no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.circleFriends .circleLocation a {
+  color: #adadad;
+  font-size: 15px;
+}
+.friendDetil .top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 44px;
+  background: #4c4c59;
+}
+.friendDetil .top > div {
+  padding-left: 15px;
+  padding-right: 10px;
+  float: left;
+  color: #fff;
+  line-height: 44px;
+}
+.friendDetil .top > div i {
+  width: 11px;
+  height: 25px;
+  margin-right: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  background: url("../images/icon70.png") no-repeat;
+  background-size: 100%;
+}
+.friendDetil .top h1 {
+  font-size: 17px;
+  color: #fff;
+  margin: 0;
+  width: auto;
+  text-align: center;
+  font-weight: 500;
+  line-height: 44px;
+  position: absolute;
+  right: 40px;
+  left: 40px;
+}
+.friendDetil .main {
+  margin-top: 44px;
+}
+.friendDetil .adContent {
+  background: #fff;
+  overflow: hidden;
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.friendDetil .adContent > span {
+  float: left;
+  width: 11%;
+  overflow: hidden;
+}
+.friendDetil .adContent > span > img {
+  width: 100%;
+}
+.friendDetil .adContent > .content {
+  float: left;
+  width: 89%;
+  padding-left: 10px;
+}
+.friendDetil .adContent > .content > ol {
+  padding-left: 0;
+}
+.friendDetil .adContent > .content > ol > li {
+  margin-bottom: 5px;
+}
+.friendDetil .adContent > .content > ol > li > .userRedo {
+  color: #929292;
+  float: right;
+}
+.friendDetil .adContent > .content > ol > li > .userRedo a {
+  text-decoration: underline;
+  color: #007aff;
+  margin-right: 15px;
+  font-size: 12px;
+}
+.friendDetil .adContent > .content > ol > li > .userRedo i {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url("../images/icon14.png") no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 3px;
+  margin-left: 15px;
+}
+.friendDetil .adContent > .content > ol > li.picture > ul {
+  float: left;
+}
+.friendDetil .adContent > .content > ol > li.picture > ul > li {
+  width: 21.8%;
+  margin-right: 10px;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.friendDetil .adContent > .content > ol > li:nth-child(4) > ul {
+  font-size: 12px;
+  overflow: hidden;
+}
+.friendDetil .adContent > .content > ol > li:nth-child(4) > ul > li {
+  float: left;
+  margin-right: 10px;
+}
+.friendDetil .adContent > .content > ol > li:nth-child(4) > ul > li:nth-child(4) > i,
+.friendDetil .adContent > .content > ol > li:nth-child(4) > ul > li:nth-child(5) > i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("../images/icon15.png") no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-top: -2px;
+}
+.friendDetil .adContent > .content > ol > li:nth-child(4) > ul > li:nth-child(5) {
+  float: right;
+  margin-right: 8px;
+}
+.friendDetil .adContent > .content > ol > li:nth-child(4) > ul > li:nth-child(4) {
+  float: right;
+  margin-right: 0;
+}
+.friendDetil .adContent > .content > ol > li:nth-child(4) > ul > li:nth-child(4) > i {
+  background-image: url("../images/icon16.png");
+}
+.friendDetil .adContent > .content > ol > li.reply {
+  background: #ebebeb;
+  position: relative;
+}
+.friendDetil .adContent > .content > ol > li.reply > ul {
+  padding: 6px 0 10px;
+}
+.friendDetil .adContent > .content > ol > li.reply > ul > li.zan {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+}
+.friendDetil .adContent > .content > ol > li.reply > ul > li.zan > i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("../images/icon15.png") no-repeat 0 0;
+  background-size: 100%;
+  margin: -2px 5px 0 3px;
+  vertical-align: middle;
+}
+.friendDetil .adContent > .content > ol > li.reply > ul > li {
+  padding: 0 5px;
+}
+.friendDetil .adContent > .content > ol > li.reply:before {
+  content: "";
+  border: 6px solid transparent;
+  border-bottom-color: #ebebeb;
+  display: inline-block;
+  height: 0px;
+  position: absolute;
+  top: -10px;
+  left: 8px;
+}
+.friendDetil .modalBox {
+  display: none;
+}
+.friendDetil .modalBox .smallBox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  background-color: #000;
+}
+.friendDetil .modalBox .tigger {
+  width: 200px;
+  height: 230px;
+  position: absolute;
+  background-color: #ffffff;
+  top: 50%;
+  box-shadow: 0 0 6px #ec3c00;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.friendDetil .modalBox .tigger .smallTigger {
+  text-align: center;
+  line-height: 40px;
+  color: #333333;
+  font-size: 14px;
+  border-bottom: 1px solid #ec3c00;
+}
+.friendDetil .modalBox .tigger .smallTigger i {
+  width: 22px;
+  float: right;
+  height: 22px;
+  margin-top: 10px;
+  display: inline-block;
+  background: url("../images/icon56.png") no-repeat;
+  background-size: 80%;
+}
+.friendDetil .modalBox .tigger .bigTigger {
+  text-align: center;
+}
+.friendDetil .modalBox .tigger .bigTigger img {
+  width: 60%;
+  margin-top: 20px;
+}
+.friendDetil .modalBox .tigger .bigTigger p {
+  color: #333333;
+}
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* 兼容iphone5 */
+  .advertis .zhe .modeFooter {
+    height: 68%;
+  }
+  .advertis .zhe .wenzi {
+    height: 32%;
+  }
+}
+/*6*/
+/*6+*/
+/*魅族*/
+@media only screen and (min-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2.5) {
+  .advertis .zhe .modeFooter {
+    height: 60%;
+  }
+  .advertis .zhe .wenzi {
+    height: 40%;
+  }
+}
+/*mate7*/
+@media only screen and (min-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 3) {
+  .advertis .zhe .modeFooter {
+    height: 60%;
+  }
+  .advertis .zhe .wenzi {
+    height: 40%;
+  }
+}
+/*4 4s*/
+@media only screen and (device-height: 480px) and (-webkit-device-pixel-ratio: 2) {
+  .advertis .zhe .modeFooter {
+    height: 80%;
+  }
+  .advertis .zhe .wenzi {
+    height: 20%;
+  }
+}

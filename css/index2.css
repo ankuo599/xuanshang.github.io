@@ -1,0 +1,1957 @@
+/*
+**首页样式开始
+*/
+html,
+body {
+  background-color: #efeff4;
+  color: #929292;
+  font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+p,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+span.mui-icon {
+  font-size: 14px;
+  color: #007aff;
+  margin-left: -15px;
+  padding-right: 10px;
+}
+.mui-off-canvas-left {
+  color: #fff;
+}
+.title {
+  margin: 35px 15px 10px;
+}
+.title + .content {
+  margin: 10px 15px 35px;
+  color: #bbb;
+  text-indent: 1em;
+  font-size: 14px;
+  line-height: 24px;
+}
+input {
+  color: #000;
+}
+/**************引导页开始****************/
+.pageFlap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  
+}
+p.againKnow {
+  width: 110px;
+  height: 40px;
+  position: absolute;
+  z-index: 1010;
+  top: 63%;
+  left: 35%;
+  background: url("../images/b009.png") no-repeat;
+  background-size: auto 100%;
+}
+.guideBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+.guideBox > img {
+  width: 102px;
+  position: relative;
+  margin-top: 13px;
+}
+.guideBox > p.guide {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 990px rgba(0, 0, 0, 0.5);
+}
+.guideBox:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.guideBox1 {
+  display: none;
+  left: 0;
+  right: auto;
+}
+.guideBox1 > img {
+  float: left;
+}
+.guideBox1 > p.guide {
+  float: left;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+.guideBox2 > img {
+  float: right;
+}
+.guideBox2 > p.guide {
+  float: right;
+  margin-top: 6px;
+  margin-right: 7px;
+}
+.guideBox3 > img {
+  float: right;
+}
+.guideBox3 > p.guide {
+  float: right;
+  margin-right: 33px;
+  margin-top: 2px;
+}
+.guideBox4 {
+  left: 0;
+}
+.guideBox4 > img {
+  float: left;
+  width: 130px;
+}
+.guideBox4 > p.guide {
+  float: left;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+.guideBox5 > img {
+  float: right;
+  margin-right: -11px;
+}
+.guideBox5 > p.guide {
+  float: right;
+  margin-right: 10px;
+  margin-top: -3px;
+}
+.guideBox6 > *,
+.guideBox7 > * {
+  float: none;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+}
+.guideBox6 > img,
+.guideBox7 > img {
+  z-index: 10;
+}
+.guideBox6 {
+  bottom: 5px;
+  top: auto;
+  width: 100%;
+}
+.guideBox6 > img {
+  display: block;
+}
+.guideBox6 > p.guide {
+  width: 69px;
+}
+.guideBox7 {
+  bottom: 5px;
+  top: auto;
+  width: 100%;
+}
+.guideBox7 > img {
+  display: block;
+  left: 67%;
+}
+.guideBox7 > p.guide {
+  width: 69px;
+}
+/**************引导页结束****************/
+.zzz {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+}
+.zzz .robMoney {
+  display: none;
+  width: 70%;
+  height: 100px;
+  background: #fff;
+  z-index: 100;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.zzz .robMoney p {
+  height: 40px;
+  line-height: 50px;
+  font-size: 15px;
+  color: #333333;
+  position: relative;
+}
+.zzz .robMoney p i {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icon55.png") no-repeat center center;
+  background-size: 64%;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+.zzz .robFriend {
+  display: none;
+  width: 70%;
+  height: 100px;
+  background: #fff;
+  z-index: 100;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.zzz .robFriend p {
+  height: 40px;
+  line-height: 50px;
+  font-size: 15px;
+  color: #333333;
+  position: relative;
+}
+.zzz .robFriend p i {
+  width: 30px;
+  height: 30px;
+  background: url("../images/icon55.png") no-repeat center center;
+  background-size: 64%;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: 3px;
+}
+.zzz .saveCode {
+  display: none;
+  width: 243px;
+  height: 282px;
+  background: #fff;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 12px #ec3c00;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.zzz .saveCode .saveEwm {
+  text-align: center;
+  line-height: 40px;
+  color: #333333;
+  font-size: 14px;
+  border-bottom: 1px solid #ec3c00;
+}
+.zzz .saveCode .saveEwm i {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("../images/icon56.png") no-repeat center center;
+  background-size: 64%;
+  position: absolute;
+  right: 3px;
+  top: 2px;
+}
+.zzz .saveCode .bigSave {
+  text-align: center;
+}
+.zzz .saveCode .bigSave img {
+  width: 70%;
+  margin-top: 20px;
+}
+.zzz .saveCode .bigSave p {
+  color: #333333;
+  font-size: 14px;
+  margin-top: 7px;
+}
+.zzz .stealMoney {
+  display: none;
+  width: 200px;
+  height: 210px;
+  background: #fff;
+  z-index: 100;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.zzz .stealMoney .stealEwm {
+  text-align: center;
+}
+.zzz .stealMoney .stealEwm img {
+  width: 63%;
+  margin-top: 25px;
+}
+.zzz .stealMoney .stealEwm p {
+  color: #ec3c00;
+  font-size: 10px;
+  margin-top: 17px;
+}
+.zzz .myMoney {
+  display: none;
+  width: 220px;
+  height: 300px;
+  background: url("../images/bg01.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.zzz .myMoney > i {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("../images/icon56.png") no-repeat center center;
+  background-size: 64%;
+  margin-right: 10px;
+  position: absolute;
+  top: 2px;
+  right: 3px;
+}
+.zzz .myMoney > span {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+  background: url("../images/redmoney.png") no-repeat;
+  background-size: 100%;
+}
+.zzz .myMoney > p {
+  margin: 0 auto;
+  font-size: 18px;
+  color: #333333;
+}
+.zzz .myMoney .oneYuan {
+  color: #ec3c00;
+  font-size: 40px;
+  margin-top: 4px;
+}
+.zzz .myMoney .oneYuan > span {
+  font-size: 20px;
+}
+.zzz .myMoney .changeMoney {
+  margin: 0 auto;
+}
+.zzz .myMoney .activeValue {
+  margin: 0 auto;
+  margin-top: 35px;
+  color: #333;
+}
+.zzz .myMoney .moreActive {
+  margin: 0 auto;
+  margin-top: 2px;
+}
+.zzz .myMoney .moreActive > a {
+  color: #ec3c00;
+}
+.zzz .uploadProof {
+  display: none;
+  width: 212px;
+  height: 258px;
+  background: #fff;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 12px #ec3c00;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.zzz .uploadProof .uploadEwm {
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  border-bottom: 1px solid #ec3c00;
+  position: relative;
+}
+.zzz .uploadProof .uploadEwm i {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("../images/icon56.png") no-repeat center center;
+  background-size: 64%;
+}
+.zzz .uploadProof .bigUpload {
+  text-align: center;
+  position: relative;
+}
+.zzz .uploadProof .bigUpload img {
+  width: 60%;
+  margin-top: 10px;
+}
+.zzz .uploadProof .bigUpload p {
+  color: #333333;
+  font-size: 17px;
+  margin-top: 10px;
+}
+.zzz .uploadProof .bigUpload input {
+  border-style: none;
+  cursor: pointer;
+  width: 116px;
+  height: 119px;
+  display: block;
+  background: transparent;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  position: absolute;
+  top: 33px;
+  left: 41px;
+  z-index: 0;
+}
+.zzz .uploadProof .bigUpload button {
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  border: 0;
+  background: #ec3c00;
+  color: #fff;
+  padding: 5px 40px;
+  margin-top: 5px;
+}
+.pageIndex {
+  width: 100%;
+  height: 100%;
+  /*
+  **swiper轮播默认样式开始
+  */
+  /*
+  **swiper轮播默认样式结束
+  */
+  /* 兼容iphone5 */
+  /*6*/
+  /*6+*/
+  /*魅族*/
+  /*mate7*/
+  /*4 4s*/
+}
+.pageIndex .hide {
+  display: none;
+}
+.pageIndex .mui-off-canvas-wrap .mui-bar {
+  background: #4c4c59;
+}
+.pageIndex .mui-bar .mui-title {
+  color: #fff;
+}
+.pageIndex .mui-icon-bars:before {
+  content: '';
+}
+.pageIndex .mui-bar-nav.mui-bar .mui-icon {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.pageIndex .mui-content-padded {
+  margin: 0;
+}
+.pageIndex .mui-bar-nav ~ .mui-content {
+  padding-bottom: 46px;
+}
+.pageIndex .icon-custom:before {
+  color: #fff;
+  font-size: 29px;
+}
+.pageIndex .mui-icon-person {
+  margin-top: 10px;
+}
+.pageIndex .mui-table-view-cell.mui-collapse .mui-collapse-content {
+  padding: 0px;
+  margin-bottom: 11px;
+  margin-top: 0;
+}
+.pageIndex .mui-off-canvas-left {
+  width: 88%;
+}
+.pageIndex .mui-off-canvas-left > p i {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: .7;
+  z-index: 1;
+}
+.pageIndex .mui-off-canvas-left > p > img {
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+.pageIndex .swiper-container {
+  width: 100%;
+  margin: 20px auto;
+}
+.pageIndex .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.pageIndex .swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+.pageIndex .swiper-slide:nth-child(3n) {
+  width: 20%;
+}
+.pageIndex .homePage .clickLarge {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  background: #000000;
+}
+.pageIndex .homePage .clickLarge > img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pageIndex .homePage > header {
+  position: relative;
+}
+.pageIndex .homePage > header > .headerMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.pageIndex .homePage > header i.person {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  vertical-align: middle;
+  background: url("../images/icon08.png") no-repeat center center;
+  background-size: 50%;
+  margin-left: -10px;
+}
+.pageIndex .homePage > header a.issue {
+  line-height: 44px;
+  color: #fff;
+  float: right;
+  padding: 0 10px;
+  margin-right: -10px;
+}
+.pageIndex .homePage > .footerMain {
+  position: fixed;
+  bottom: 0;
+  z-index: 8;
+  width: 100%;
+}
+.pageIndex .homePage > .footerMain .footerMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.pageIndex .homePage > .footerMain .mui-table-view:before {
+  background: transparent;
+}
+.pageIndex .homePage > .footerMain .mui-table-view:after {
+  background: transparent;
+}
+.pageIndex .homePage > .footerMain > ul {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border-top: 2px solid #4c4c59;
+}
+.pageIndex .homePage > .footerMain > ul > li {
+  float: left;
+  width: 14%;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+.pageIndex .homePage > .footerMain > ul > li > .menuBtn {
+  display: inline-block;
+  background: url("../images/shang.png") no-repeat center center;
+  background-size: 44%;
+  width: 100%;
+}
+.pageIndex .homePage > .footerMain > ul > li > .subMenubtn {
+  position: absolute;
+  bottom: 50px;
+}
+.pageIndex .homePage > .footerMain > ul > li > .subMenubtn > ul {
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 1px 0px 2px #ccc;
+  width: 76px;
+  margin-left: 10px;
+  border-bottom: 0px;
+}
+.pageIndex .homePage > .footerMain > ul > li > .subMenubtn > ul > li {
+  height: 42px;
+  line-height: 42px;
+  background: #fff;
+}
+.pageIndex .homePage > .footerMain > ul > li > .subMenubtn > ul > li > a {
+  color: #929292;
+}
+.pageIndex .homePage > .footerMain > ul > li > .subMenubtn > ul > li:nth-child(1) {
+  border-bottom: 1px solid #ccc;
+}
+.pageIndex .homePage > .footerMain > ul > li button {
+  border: 0;
+  border-radius: 0;
+  height: 48px;
+}
+.pageIndex .homePage > .footerMain > ul > li.bigBox {
+  width: 43%;
+  border-left: 1px solid #ccc;
+  position: relative;
+}
+.pageIndex .homePage > .footerMain > ul > li.bigBox > i {
+  display: inline-block;
+  width: 14px;
+  height: 19px;
+  background: url("../images/icon18.png") no-repeat center center;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: -3px;
+}
+.pageIndex .homePage > .footerMain > ul > li.moneyBtn {
+  background: #4c4c59;
+  color: #fff;
+  position: relative;
+}
+.pageIndex .homePage > .footerMain > ul > li.moneyBtn > i {
+  background-image: url("../images/icon19.png");
+}
+.pageIndex .homePage > .popMisson {
+  width: 85%;
+  height: 26px;
+  line-height: 26px;
+  color: #fff;
+  font-size: 15px;
+  position: absolute;
+  top: -26px;
+  left: 8%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  border-radius: 50px;
+}
+.pageIndex .homePage > .popMisson i {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  display: inline-block;
+  background: url("../images/touxiang01.png") no-repeat;
+  background-size: 100%;
+}
+.pageIndex #offCanvasContentScroll .carousel-box {
+  margin: 0;
+  padding-top: 5px;
+}
+.pageIndex #offCanvasContentScroll .carousel-box .swiper-slide > img {
+  width: 100%;
+}
+.pageIndex #offCanvasContentScroll .carousel-box .swiper-slide-active + div {
+  padding: 1px;
+  -webkit-box-shadow: 0 0 3px 2px #4c4c59 inset;
+  box-shadow: 0px 0 3px 2px #4c4c59 inset;
+  background: #4c4c59;
+  position: relative;
+  top: -2px;
+  z-index: 10;
+  width: 35% !important;
+}
+.pageIndex #offCanvasContentScroll .personInfor {
+  background: #fff;
+  margin-top: 4px;
+  padding: 10px;
+  border-bottom: 1px solid #e9e9e9;
+  position: relative;
+}
+.pageIndex #offCanvasContentScroll .personInfor p {
+  color: #929292;
+}
+.pageIndex #offCanvasContentScroll .personInfor .userName {
+  margin-bottom: 5px;
+}
+.pageIndex #offCanvasContentScroll .personInfor .userName > i {
+  display: inline-block;
+  height: 14px;
+  width: 9px;
+  background: url("../images/icon10.png") no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+.pageIndex #offCanvasContentScroll .personInfor .userName > span:nth-child(1) {
+  font-size: 18px;
+  margin-right: 5px;
+  color: #333333;
+  display: inline-block;
+  max-width: 110px;
+  /*要显示文字的宽度*/
+  overflow: hidden;
+  /*超出的部分隐藏起来。*/
+  white-space: nowrap;
+  /*不显示的地方用省略号...代替*/
+  text-overflow: ellipsis;
+  /* 支持 IE */
+}
+.pageIndex #offCanvasContentScroll .personInfor .userName button.attention {
+  float: right;
+  padding: 4px 7px;
+  background-color: #ec3c00;
+  border: 0;
+  color: #fff;
+}
+.pageIndex #offCanvasContentScroll .personInfor .userName button.attention i {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url("../images/icon11.png") no-repeat 0 0;
+  background-size: 100%;
+  margin-top: -1px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.pageIndex #offCanvasContentScroll .personInfor ul.memberInfor {
+  overflow: hidden;
+}
+.pageIndex #offCanvasContentScroll .personInfor ul.memberInfor > li {
+  float: left;
+  color: #929292;
+  font-size: 12px;
+  width: 33%;
+}
+.pageIndex #offCanvasContentScroll .personInfor ul.memberInfor > li:nth-child(3) {
+  clear: left;
+}
+.pageIndex #offCanvasContentScroll .personInfor:before {
+  content: "";
+  border: 6px solid transparent;
+  border-bottom-color: #fff;
+  display: inline-block;
+  height: 0px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 10;
+}
+.pageIndex #offCanvasContentScroll .code {
+  padding: 13px 10px;
+  background: #fff;
+  position: relative;
+}
+.pageIndex #offCanvasContentScroll .code > i {
+  background: url("../images/icon12.png") no-repeat 0 0;
+  background-size: 100%;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 7px;
+}
+.pageIndex #offCanvasContentScroll .code > span {
+  font-size: 21px;
+  margin: 0;
+  padding: 0;
+  float: right;
+  color: #929292;
+}
+.pageIndex #offCanvasContentScroll .adContent {
+  background: #fff;
+  margin-top: 5px;
+  padding: 10px;
+}
+.pageIndex #offCanvasContentScroll .adContent > * {
+  -webkit-user-select: text !important;
+}
+.pageIndex #offCanvasContentScroll .adContent > span {
+  float: left;
+  width: 11%;
+  overflow: hidden;
+}
+.pageIndex #offCanvasContentScroll .adContent > span > img {
+  width: 100%;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content {
+  float: left;
+  width: 89%;
+  padding-left: 10px;
+  position: relative;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li {
+  margin-bottom: 5px;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li > .userRedo {
+  color: #929292;
+  float: right;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li > .userRedo > i {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url("../images/icon14.png") no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 3px;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(2) {
+  line-height: 18px;
+  height: 36px;
+  width: 239px;
+  /*要显示文字的宽度*/
+  overflow: hidden;
+  /*超出的部分隐藏起来。*/
+  text-overflow: ellipsis;
+  /* 支持 IE */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul {
+  font-size: 12px;
+  overflow: hidden;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul > li {
+  float: left;
+  margin-right: 10px;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul > li:nth-child(4) > i,
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul > li:nth-child(5) > i {
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  background: url("../images/icon15.png") no-repeat 0 0;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul > li:nth-child(5) {
+  float: right;
+  margin-right: 15px;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul > li:nth-child(4) {
+  float: right;
+  margin-right: 0;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul > li:nth-child(4) > i {
+  background-image: url("../images/icon16.png");
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li.reply {
+  background: #ebebeb;
+  position: relative;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li.reply > ul {
+  padding: 6px 0 10px;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li.reply > ul > li.zan {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li.reply > ul > li.zan > i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("../images/icon15.png") no-repeat 0 0;
+  background-size: 100%;
+  margin: -2px 5px 0 3px;
+  vertical-align: middle;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li.reply > ul > li {
+  padding: 0 5px;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li.reply:before {
+  content: "";
+  border: 6px solid transparent;
+  border-bottom-color: #ebebeb;
+  display: inline-block;
+  height: 0px;
+  position: absolute;
+  top: -10px;
+  left: 8px;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li.commBox {
+  overflow: hidden;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li.commBox > input {
+  height: 30px;
+  border-radius: 0;
+  width: 78%;
+  float: left;
+  margin: 0;
+  padding: 0 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-right: 2%;
+}
+.pageIndex #offCanvasContentScroll .adContent > .content > ol > li.commBox > button {
+  width: 20%;
+  height: 30px;
+  float: left;
+  border-radius: 5px;
+  padding: 0;
+  color: #929292;
+}
+.pageIndex #offCanvasContentScroll .adContent:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.pageIndex #offCanvasSide {
+  color: #fff;
+}
+.pageIndex #offCanvasSide .personCenter > dl {
+  margin-top: 15px;
+}
+.pageIndex #offCanvasSide .personCenter > dl > dt {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.pageIndex #offCanvasSide .personCenter > dl > dt > img {
+  width: 100%;
+}
+.pageIndex #offCanvasSide .personCenter > dl > dd {
+  height: 62px;
+}
+.pageIndex #offCanvasSide .personCenter > dl > dd > p {
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+}
+.pageIndex #offCanvasSide .personCenter > dl > dd > p.userName {
+  font-size: 16px;
+  margin: 0 auto;
+  width: 154px;
+  /*要显示文字的宽度*/
+  overflow: hidden;
+  /*超出的部分隐藏起来。*/
+  white-space: nowrap;
+  /*不显示的地方用省略号...代替*/
+  text-overflow: ellipsis;
+  /* 支持 IE */
+}
+.pageIndex #offCanvasSide .personCenter > dl > dd > p.member {
+  font-size: 14px;
+}
+.pageIndex #offCanvasSide .personCenter > dl > dd > p.member > a {
+  color: #fff;
+}
+.pageIndex #offCanvasSide .personCenter > dl > dd > p.member > a > span {
+  color: #fcc347;
+  border-radius: 10px;
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+  border: 1px solid #fcc347;
+  padding: 0 7px;
+  margin-left: -10px;
+}
+.pageIndex #offCanvasSide .personCenter > dl > dd > p.personal {
+  -webkit-transform: scale(0.9);
+  color: #929292;
+}
+.pageIndex #offCanvasSide .personCenter > ul {
+  overflow: hidden;
+  width: 80%;
+  margin: 10px auto;
+}
+.pageIndex #offCanvasSide .personCenter > ul > li {
+  float: left;
+  width: 50%;
+  padding-left: 30px;
+  font-size: 14px;
+}
+.pageIndex #offCanvasSide .personCenter > ul > li a {
+  color: #fff;
+  display: block;
+}
+.pageIndex #offCanvasSide .personCenter > ul > li i {
+  display: inline-block;
+  width: 25px;
+  height: 32px;
+  background: url("../images/icon21.png") no-repeat center center;
+  vertical-align: middle;
+  background-size: 100%;
+  margin-top: -2px;
+  margin-right: 11px;
+}
+.pageIndex #offCanvasSide .personCenter > ul > li:first-child {
+  padding-left: 0px;
+  padding-right: 30px;
+  border-right: 1px solid #fff;
+  text-align: right;
+}
+.pageIndex #offCanvasSide .personCenter > ul > li:first-child i {
+  width: 20px;
+  background-image: url("../images/icon20.png");
+}
+.pageIndex #offCanvasSide .menuGrid {
+  border-bottom: 1px solid #58595e;
+  border-top: 1px solid #918d8d;
+}
+.pageIndex #offCanvasSide .menuGrid > ul {
+  width: 80%;
+  padding: 5px 0 24px;
+  margin: 0 auto;
+}
+.pageIndex #offCanvasSide .menuGrid > ul > li {
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 25.9%;
+  position: relative;
+}
+.pageIndex #offCanvasSide .menuGrid > ul > li > a {
+  display: inline-block;
+}
+.pageIndex #offCanvasSide .menuGrid > ul > li > a > span {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+  padding: 21%;
+}
+.pageIndex #offCanvasSide .menuGrid > ul > li > a > span img {
+  width: 85%;
+}
+.pageIndex #offCanvasSide .menuGrid > ul > li > p {
+  color: #fff;
+  font-size: 14px;
+  word-break: keep-all;
+  /* 不换行 */
+  white-space: nowrap;
+  text-align: center;
+  margin-top: 3px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+}
+.pageIndex #offCanvasSide .menuGrid > ul > li:nth-child(1),
+.pageIndex #offCanvasSide .menuGrid > ul li:nth-child(2),
+.pageIndex #offCanvasSide .menuGrid > ul li:nth-child(3) {
+  margin-top: 10px;
+}
+.pageIndex #offCanvasSide .menuGrid > ul > li:nth-child(2),
+.pageIndex #offCanvasSide .menuGrid > ul li:nth-child(5),
+.pageIndex #offCanvasSide .menuGrid > ul li:nth-child(8) {
+  margin-left: 11.11%;
+  margin-right: 11.11%;
+}
+.pageIndex #offCanvasSide .menuGrid > ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.pageIndex #offCanvasSide .subPage {
+  margin-bottom: 14px;
+}
+.pageIndex #offCanvasSide .subPage > dl {
+  margin-top: 19px;
+}
+.pageIndex #offCanvasSide .subPage > dl > dt {
+  width: 50px;
+  height: 50px;
+}
+.pageIndex #offCanvasSide .subPage > dl > dd {
+  height: 40px;
+  margin-top: 5px;
+}
+.pageIndex #offCanvasSide .subPage > dl > dd > p.subPageHide {
+  display: none;
+}
+.pageIndex #offCanvasSide .subPageCom {
+  background: rgba(165, 158, 158, 0.5);
+  -webkit-box-shadow: 0 0 1px #ec3c00;
+  height: 320px;
+  width: 92%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 25px;
+  display: none;
+}
+.pageIndex #offCanvasSide .subPageCom > i {
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+  background: url("../images/icon31.png") no-repeat center center;
+  background-size: 58%;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  z-index: 20;
+}
+.pageIndex #offCanvasSide .subPageCom > p {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #b04726;
+}
+.pageIndex #offCanvasSide .subPageCom p {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+.pageIndex #offCanvasSide .subPageCom > dl {
+  line-height: 28px;
+  margin-top: 15px;
+}
+.pageIndex #offCanvasSide .subPageCom > dl > dt {
+  text-align: center;
+}
+.pageIndex #offCanvasSide .memberbuy > p {
+  margin-bottom: 10px;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon {
+  margin-top: 59px;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon dl {
+  height: 67px;
+  padding: 12px 20px 0 50px;
+  background: url("../images/vip01.png") no-repeat top left;
+  background-size: 13%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon dl > * > p {
+  color: #ec3c00;
+  line-height: 18px;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon dl > * > span {
+  font-size: 13px;
+  display: block;
+  text-align: left;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon dl > dt {
+  float: left;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon dl > dd {
+  text-align: right;
+  float: right;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon dl > dd > p {
+  padding-left: 16px;
+  background: url("../images/icon21.png") no-repeat left center;
+  background-size: 15px;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon dl > dd > span {
+  background: #6b6b6b;
+  height: 20px;
+  width: 42px;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 4px;
+  display: inline-block;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon dl:nth-child(2) {
+  background-image: url("../images/vip02.png");
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon dl:nth-child(3) {
+  background-image: url("../images/vip03.png");
+}
+.pageIndex #offCanvasSide .memberbuy > .memberCon dl:nth-child(4) {
+  background-image: url("../images/vip04.png");
+}
+.pageIndex #offCanvasSide .memberbuy > .memberModal {
+  width: 86%;
+  height: 149px;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 64px auto 0;
+  position: relative;
+  z-index: 30;
+  padding: 27px 0;
+  display: none;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberModal > p {
+  color: #fff;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberModal > span {
+  display: block;
+  text-align: center;
+  margin-top: 32px;
+}
+.pageIndex #offCanvasSide .memberbuy > .memberModal > span > button {
+  border: 1px solid #b04726;
+  background: transparent;
+  border-radius: 0px;
+  margin: 0 4%;
+  width: 27%;
+  color: #fff;
+}
+.pageIndex #offCanvasSide .myFriend {
+  position: relative;
+  display: none;
+  border-top: 1px solid #918d8d;
+  height: 373px;
+}
+.pageIndex #offCanvasSide .myFriend > i {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url("../images/icon31.png") no-repeat center center;
+  background-size: 100%;
+  position: absolute;
+  right: 17px;
+  top: 14px;
+  z-index: 20;
+}
+.pageIndex #offCanvasSide .myFriend > .search {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 29px;
+  height: 29px;
+  margin: 13px auto;
+  width: 70%;
+  border: 1px solid #000;
+}
+.pageIndex #offCanvasSide .myFriend > .search > i {
+  background: url("../images/icon69.png") no-repeat center center;
+  background-size: 100%;
+  display: inline-block;
+  width: 14px;
+  height: 19px;
+  margin-top: -4px;
+  vertical-align: middle;
+}
+.pageIndex #offCanvasSide .myFriend > .search > input {
+  padding: 0;
+  margin: 0;
+  height: 29px;
+  width: 124px;
+  font-size: 13px;
+  background-color: transparent;
+  color: #b9b8b8;
+  border: 0;
+}
+.pageIndex #offCanvasSide .myFriend > .mui-scroll-wrapper {
+  top: 50px;
+  height: 315px;
+}
+.pageIndex #offCanvasSide .myFriend .friendList dl {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.17);
+  margin-bottom: 5px;
+}
+.pageIndex #offCanvasSide .myFriend .friendList dl > dt {
+  float: left;
+  width: 16%;
+  overflow: hidden;
+}
+.pageIndex #offCanvasSide .myFriend .friendList dl > dt > img {
+  width: 100%;
+  vertical-align: middle;
+}
+.pageIndex #offCanvasSide .myFriend .friendList dl > dd {
+  float: left;
+  line-height: 46px;
+  font-size: 16px;
+  width: 78%;
+  margin-left: 3%;
+}
+.pageIndex #offCanvasSide .myFriend .friendList dl > dd > span {
+  float: left;
+  width: 100px;
+  /*要显示文字的宽度*/
+  overflow: hidden;
+  /*超出的部分隐藏起来。*/
+  white-space: nowrap;
+  /*不显示的地方用省略号...代替*/
+  text-overflow: ellipsis;
+  /* 支持 IE */
+}
+.pageIndex #offCanvasSide .myFriend .friendList dl > dd > p {
+  float: right;
+  color: #fff;
+  font-size: 16px;
+}
+.pageIndex #offCanvasSide .liveness {
+  position: relative;
+}
+.pageIndex #offCanvasSide .liveness > .livenessCon {
+  margin-top: 25px;
+  text-align: center;
+  width: 64%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+.pageIndex #offCanvasSide .liveness > .livenessCon > p {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  line-height: 52px;
+  -webkit-transform: translate(-50%, -50%);
+}
+.pageIndex #offCanvasSide .liveness > .livenessCon > p > span {
+  display: block;
+  color: #ec3c00;
+  font-size: 32px;
+}
+.pageIndex #offCanvasSide .liveness > .livenessCon > i {
+  display: inline-block;
+}
+.pageIndex #offCanvasSide .liveness > .livenessCon > i > img {
+  width: 100%;
+}
+.pageIndex #offCanvasSide .qrCode > .qrCodeCon {
+  margin-top: 23px;
+}
+.pageIndex #offCanvasSide .qrCode > .qrCodeCon > ul > li {
+  font-size: 16px;
+  margin: 10px auto;
+  text-align: center;
+  width: 49%;
+}
+.pageIndex #offCanvasSide .qrCode > .qrCodeCon > ul > li > img {
+  width: 100%;
+}
+.pageIndex #offCanvasSide .qrCode > .qrCodeCon > ul > li:last-child {
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  position: absolute;
+  bottom: 12px;
+  right: 10px;
+}
+.pageIndex #offCanvasSide .qrCode > .qrCodeCon > ul > li:last-child i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../images/icon34.png") no-repeat center center;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 3px;
+  margin-top: -2px;
+}
+.pageIndex #offCanvasSide .commission > .commissionCon > p {
+  margin-top: 20px;
+}
+.pageIndex #offCanvasSide .commission > .commissionCon > p span {
+  color: #ec3c00;
+}
+.pageIndex #offCanvasSide .commission > .commissionCon > div {
+  width: 100%;
+  margin-left: -13px;
+}
+.pageIndex #offCanvasSide .commission #barCom {
+  width: 251px;
+  height: 266px;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+.pageIndex #offCanvasSide .commission #barCom div {
+  margin-left: -10px;
+}
+.pageIndex #offCanvasSide .commission #barCom div canvas {
+  width: 251px;
+  height: 277px;
+  margin-left: -10px;
+}
+.pageIndex #offCanvasSide .rechargeCon {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+.pageIndex #offCanvasSide .rechargeCon > p {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 13px;
+  text-align: left;
+}
+.pageIndex #offCanvasSide .rechargeCon > .money > ul {
+  overflow: hidden;
+}
+.pageIndex #offCanvasSide .rechargeCon > .money > ul > li {
+  float: left;
+  width: 28.66%;
+  height: 31px;
+  margin-bottom: 15px;
+  line-height: 29px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #b04726;
+}
+.pageIndex #offCanvasSide .rechargeCon > .money > ul > li:nth-child(2),
+.pageIndex #offCanvasSide .rechargeCon > .money > ul li:nth-child(5),
+.pageIndex #offCanvasSide .rechargeCon > .money > ul li:nth-child(8) {
+  margin: 0 7%;
+}
+.pageIndex #offCanvasSide .rechargeCon > .money > ul > li.active {
+  background: rgba(176, 71, 38, 0.9);
+}
+.pageIndex #offCanvasSide .rechargeCon > .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  width: 79%;
+  height: 140px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: none;
+}
+.pageIndex #offCanvasSide .rechargeCon > .modal > i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/icon31.png") no-repeat center center;
+  background-size: 64%;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+.pageIndex #offCanvasSide .rechargeCon > .modal > p {
+  margin: 33px 0 20px;
+  text-align: center;
+}
+.pageIndex #offCanvasSide .rechargeCon > .modal > input {
+  border: 1px solid #fff;
+  background: #424243;
+  border-radius: 0px;
+  width: 50%;
+  height: 30px;
+  padding: 0 2px;
+  color: #fff;
+}
+.pageIndex #offCanvasSide .rechargeCon > button {
+  border: 0;
+  border-radius: 0;
+  height: 36px;
+  color: #fff;
+  background: #ec3c00;
+  width: 55%;
+  margin-top: 18px;
+  font-size: 16px;
+}
+.pageIndex #offCanvasSide .withdraw > dl > dt > span {
+  color: #ec3c00;
+}
+.pageIndex #offCanvasSide .withdraw > dl > dd {
+  margin-top: 20px;
+  text-align: center;
+}
+.pageIndex #offCanvasSide .withdraw > dl > dd > p > input {
+  width: 140px;
+  height: 34px;
+  border: 1px solid #ec3c00;
+  background: transparent;
+  font-size: 14px;
+  border-radius: 0px;
+  padding: 0 7px;
+}
+.pageIndex #offCanvasSide .withdraw > dl > dd > button {
+  margin-top: 20px;
+  width: 140px;
+  height: 30px;
+  border-radius: 0;
+  border: 0;
+  background: #ec3c00;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+}
+.pageIndex #offCanvasSide #circle1 {
+  margin-top: 18px;
+}
+.pageIndex #offCanvasSide .circle {
+  text-align: center;
+  position: relative;
+}
+.pageIndex #offCanvasSide .circle > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+.pageIndex #offCanvasSide .circle > div > p {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.pageIndex #offCanvasSide .circle > div > span {
+  color: #ec3c00;
+  font-size: 22px;
+}
+.pageIndex #offCanvasSide span.circle {
+  display: inline-block;
+  width: 50%;
+  margin-top: 15px;
+  float: left;
+}
+.pageIndex #offCanvasSide .mission {
+  padding-bottom: 25px;
+}
+.pageIndex #offCanvasSide .mission > p > a {
+  float: left;
+  width: 50%;
+  color: #999;
+  position: relative;
+}
+.pageIndex #offCanvasSide .mission > p > a > i {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.2);
+}
+.pageIndex #offCanvasSide .mission > p > a:first-child {
+  text-align: right;
+  padding-right: 10%;
+}
+.pageIndex #offCanvasSide .mission > p > a:last-child {
+  text-align: left;
+  padding-left: 10%;
+}
+.pageIndex #offCanvasSide .mission > p > a.active {
+  color: #fff;
+}
+.pageIndex #offCanvasSide .mission > p > a.active > i {
+  display: none;
+}
+.pageIndex #offCanvasSide .mission > .missionCon {
+  height: 264px;
+  position: relative;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantCount {
+  position: relative;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantCount > p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantCount > p > span {
+  font-size: 15px;
+  color: #ec3c00;
+  vertical-align: middle;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantCount > div {
+  width: 100%;
+  height: 230px;
+  position: relative;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantCount > div > div {
+  width: 280px;
+  height: 230px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -115px;
+  margin-left: -140px;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantList {
+  display: none;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantList > ul {
+  padding: 0 10px;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantList > ul > li {
+  line-height: 41px;
+  overflow: hidden;
+  border-bottom: 1px solid #717173;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantList > ul > li > i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon46.png") no-repeat center center;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 7px;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantList > ul > li > span {
+  float: right;
+  display: inline-block;
+  font-size: 12px;
+  color: #dad6a5;
+  width: 70px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  background: #232426;
+  margin-top: 12px;
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantList > ul > li:nth-child(2) > i {
+  background-image: url("../images/icon47.png");
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantList > ul > li:nth-child(3) > i {
+  background-image: url("../images/icon48.png");
+}
+.pageIndex #offCanvasSide .mission > .missionCon #grantList > ul > li:nth-child(4) > i {
+  background-image: url("../images/icon49.png");
+}
+.pageIndex #offCanvasSide .member > div {
+  width: 100%;
+  height: 91%;
+  position: relative;
+}
+.pageIndex #offCanvasSide .member > div > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+.pageIndex #offCanvasSide .member > div > div {
+  width: 200px;
+  height: 200px;
+  z-index: 10;
+}
+.pageIndex #offCanvasSide .member > div > p {
+  width: 175px;
+  height: 175px;
+  background: #ec3c00;
+  border-radius: 50%;
+}
+.pageIndex #offCanvasSide .time .timeCon > p {
+  margin-top: 20px;
+}
+.pageIndex #offCanvasSide .time .timeCon > p > span {
+  color: #ec3c00;
+}
+.pageIndex #offCanvasSide .time .timeCon > div {
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+}
+.pageIndex #offCanvasSide .time .timeCon > div > img {
+  width: 60%;
+}
+.pageIndex #offCanvasSide .time .timeCon > div > ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+.pageIndex #offCanvasSide .time .timeCon > div > ul li {
+  text-align: center;
+}
+.pageIndex #offCanvasSide .time .timeCon > div > ul li:last-child {
+  color: #ec3c00;
+  margin-top: 15px;
+}
+.pageIndex #offCanvasSide .time .timeCon > div > ul li:last-child > span {
+  font-size: 35px;
+}
+.pageIndex #offCanvasSide .menuBread {
+  padding: 9px 0px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 16px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+  background: url("../images/liveness.png") no-repeat center center;
+  background-size: 60%;
+  display: none;
+}
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .pageIndex li {
+    border: 0;
+    border-radius: 0;
+  }
+  .pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul > li {
+    margin-right: 5px;
+  }
+  .pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul > li:nth-child(5) {
+    margin-right: 7px;
+  }
+  .pageIndex #offCanvasContentScroll .personInfor .userName .attention i {
+    width: 11px;
+    height: 11px;
+  }
+  .pageIndex #offCanvasSide .myFriend > .mui-scroll-wrapper {
+    height: 267px;
+  }
+  .pageIndex #offCanvasSide .personCenter > ul > li:first-child {
+    padding-right: 22px;
+  }
+  .pageIndex #offCanvasSide .personCenter > ul > li {
+    padding-left: 22px;
+  }
+  .pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(2) {
+    width: 204px;
+  }
+  .pageIndex #offCanvasSide .subPageCom {
+    height: 271px;
+  }
+  .pageIndex #offCanvasSide .memberbuy {
+    height: 310px;
+  }
+  .pageIndex #offCanvasSide .subPage > dl > dd {
+    height: 30px;
+  }
+  .pageIndex #offCanvasSide .qrCode > .qrCodeCon {
+    margin-top: 13px;
+  }
+  .pageIndex #offCanvasSide .qrCode > .qrCodeCon > ul > li {
+    margin: 0 auto;
+  }
+  .pageIndex #offCanvasSide .rechargeCon > .money > ul > li {
+    margin-bottom: 12px;
+  }
+  .pageIndex #offCanvasSide .rechargeCon > p {
+    margin-top: 8px;
+  }
+  .pageIndex #offCanvasSide .rechargeCon > button {
+    margin-top: 4px;
+  }
+  .pageIndex #offCanvasSide .mission .missionCon {
+    height: 210px;
+  }
+  .pageIndex #offCanvasSide .myFriend > .mui-scroll-wrapper {
+    height: 226px;
+  }
+  .pageIndex #offCanvasSide .myFriend {
+    height: 266px;
+  }
+  .pageIndex #offCanvasSide .commission #barCom {
+    margin-top: -45px;
+  }
+  .pageIndex #offCanvasSide .commission > .commissionCon > p {
+    margin-top: 13px;
+  }
+  .pageIndex #offCanvasSide #circle1 {
+    margin-top: 17px;
+  }
+  .pageIndex #offCanvasSide .member > div {
+    height: 89%;
+  }
+  .pageIndex #offCanvasSide .member > div > p {
+    width: 165px;
+    height: 165px;
+  }
+  .pageIndex #offCanvasSide .liveness > .livenessCon {
+    margin-top: 25px;
+  }
+}
+@media only screen and (device-height: 480px) and (-webkit-device-pixel-ratio: 2) {
+  .pageIndex li {
+    border: 0;
+    border-radius: 0;
+  }
+  .pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(2) {
+    width: 204px;
+  }
+  .pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul > li:nth-child(5) {
+    margin-right: 7px;
+  }
+  .pageIndex #offCanvasContentScroll .adContent > .content > ol > li:nth-child(3) > ul > li {
+    margin-right: 5px;
+  }
+  .pageIndex #offCanvasContentScroll .personInfor .userName .attention i {
+    width: 11px;
+    height: 11px;
+  }
+  .pageIndex #offCanvasSide .personCenter > ul {
+    margin: 6px auto;
+  }
+  .pageIndex #offCanvasSide .personCenter > ul > li {
+    padding-left: 22px;
+  }
+  .pageIndex #offCanvasSide .personCenter > ul > li:first-child {
+    padding-right: 22px;
+  }
+  .pageIndex #offCanvasSide .menuGrid > ul {
+    width: 72%;
+  }
+  .pageIndex #offCanvasSide .menuGrid > ul > li {
+    width: 23.9%;
+  }
+  .pageIndex #offCanvasSide .menuGrid > ul > li:nth-child(2),
+  .pageIndex #offCanvasSide .menuGrid > ul li:nth-child(5),
+  .pageIndex #offCanvasSide .menuGrid > ul li:nth-child(8) {
+    margin-right: 14.15%;
+    margin-left: 14.15%;
+  }
+  .pageIndex #offCanvasSide .personCenter > dl > dt {
+    width: 61px;
+    height: 61px;
+  }
+  .pageIndex #offCanvasSide .subPage > dl {
+    margin-top: 14px;
+  }
+  .pageIndex #offCanvasSide .subPage > dl > dd {
+    height: 22px;
+  }
+  .pageIndex #offCanvasSide .subPageCom {
+    width: 87%;
+    height: 255px;
+  }
+  .pageIndex #offCanvasSide .subPageCom > p {
+    height: 41px;
+    line-height: 40px;
+  }
+  .pageIndex #offCanvasSide .subPageCom > i {
+    top: 0px;
+  }
+  .pageIndex #offCanvasSide .memberbuy {
+    height: 290px;
+  }
+  .pageIndex #offCanvasSide .memberbuy > .memberCon {
+    margin-top: 44px;
+  }
+  .pageIndex #offCanvasSide .memberbuy > .memberCon dl {
+    height: 57px;
+    padding-top: 6px;
+  }
+  .pageIndex #offCanvasSide .myFriend {
+    height: 276px;
+  }
+  .pageIndex #offCanvasSide .myFriend > .search {
+    margin: 5px auto;
+  }
+  .pageIndex #offCanvasSide .myFriend i {
+    top: 10px;
+    right: 13px;
+  }
+  .pageIndex #offCanvasSide .myFriend > .mui-scroll-wrapper {
+    top: 40px;
+    height: 220px;
+  }
+  .pageIndex #offCanvasSide .myFriend .friendList dl > dt {
+    width: 14%;
+  }
+  .pageIndex #offCanvasSide .myFriend .friendList dl > dd {
+    line-height: 17px;
+  }
+  .pageIndex #offCanvasSide .liveness > .livenessCon {
+    margin-top: 20px;
+  }
+  .pageIndex #offCanvasSide .qrCode > .qrCodeCon {
+    margin-top: 13px;
+  }
+  .pageIndex #offCanvasSide .qrCode > .qrCodeCon > ul > li {
+    margin: 3px auto;
+  }
+  .pageIndex #offCanvasSide .rechargeCon > p {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .pageIndex #offCanvasSide .rechargeCon > .money > ul > li {
+    margin-bottom: 11px;
+  }
+  .pageIndex #offCanvasSide .rechargeCon > button {
+    margin-top: 5px;
+  }
+  .pageIndex #offCanvasSide .commission #barCom {
+    margin-top: -40px;
+  }
+  .pageIndex #offCanvasSide .commission > .commissionCon > p {
+    margin-top: 9px;
+  }
+  .pageIndex #offCanvasSide .withdraw > dl > dd {
+    margin-top: 13px;
+  }
+  .pageIndex #offCanvasSide .withdraw > dl > dd > button {
+    margin-top: 12px;
+  }
+  .pageIndex #offCanvasSide .mission .missionCon {
+    height: 210px;
+  }
+  .pageIndex #offCanvasSide .circle > div > span {
+    font-size: 20px;
+  }
+  .pageIndex #offCanvasSide #circle1 {
+    margin-top: 10px;
+  }
+  .pageIndex #offCanvasSide .time .timeCon > p {
+    margin-top: 12px;
+  }
+  .pageIndex #offCanvasSide .menuBread {
+    margin-left: 6.5%;
+  }
+  .pageIndex #offCanvasSide .member > div p {
+    width: 165px;
+    height: 165px;
+  }
+}
+/*
+*/
+/*首页样式结束
+/*
+*/

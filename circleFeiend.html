@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>赏金咖-发布朋友圈</title>
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <!--标准mui.css-->
+  <link rel="stylesheet" href="css/mui.min.css">
+  <!--App自定义的css-->
+  <link rel="stylesheet" type="text/css" href="css/app.css"/>
+  <!--自定义CSS-->
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  <style>
+  </style>
+</head>
+<body>
+<!--发布广告-->
+<div class="circleFriends advertis">
+  <!--表头-->
+  <header class="top">
+    <div>
+      <i></i>返回
+    </div>
+    <h1>发布朋友圈</h1>
+  </header>
+  <!--内容-->
+  <div class="contents">
+    <!--第一部分文本域输入-->
+    <div class="addText">
+      <textarea id="textarea1">#在此编辑广告内容</textarea>
+
+      <div class="addimg">
+        <ul>
+          <li><input id="addimgBtn1" multiple="multiple" type="file" accept="image/*;capture=camera"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="circleLocation">
+      <i></i>
+      <a href="">所在位置</a></span>
+    </div>
+    <div style="clear: both"></div>
+  </div>
+  <div class="footer">
+    <button type="submit">确定</button>
+  </div>
+</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  //为textarea设置focus属性
+  $("#textarea1").focus(function () {
+    $(this).html("");
+  });
+  $("#textarea1").blur(function () {
+    $(this).html("#在此编辑广告内容");
+  });
+
+  //添加图片
+  var count = 0;
+  function readAsDataURL() {
+    console.log(count);
+    if (count >= 4) {
+      alert("最多只能上传四张图片...");
+      return;
+    }
+    //检验是否为图像文件
+    var file = document.getElementById("addimgBtn1").files[0];
+    if (file == undefined) {
+      return;
+    }
+    if (!/image\/\w+/.test(file.type)) {
+      alert("请选择图片文件...");
+      return false;
+    }
+    var reader = new FileReader();
+    //将文件以Data URL形式读入页面
+    reader.readAsDataURL(file);
+    reader.onload = function (e) {
+      //显示文件
+      $(".addimg>ul").prepend("<li><img src='" + this.result + "'/></li>");
+      count++;
+    }
+  }
+  $("#addimgBtn1").change(function () {
+    readAsDataURL();
+  });
+
+
+</script>
+</html>

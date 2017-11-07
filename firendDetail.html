@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>朋友圈详情</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <!--标准mui.css-->
+  <link rel="stylesheet" href="css/mui.min.css">
+  <!--自定义CSS-->
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  <style>
+
+  </style>
+</head>
+
+<body>
+<!--发布广告-->
+<div class="friendDetil">
+  <!--表头-->
+  <header class="top">
+    <div onclick="window.history.go(-1)">
+      <i></i>返回
+    </div>
+    <h1>朋友圈</h1>
+  </header>
+  <!--内容-->
+  <div class="main">
+    <div class="adContent">
+      <!--头像-->
+    <span>
+      <img src="images/headImg01.png"/>
+    </span>
+      <!--内容-->
+      <div class="content">
+        <ol>
+          <!--用户名-->
+          <li>
+            人生若只如初见
+            <span class="userRedo"><a href="javascript:shield();">联系Ta</a>|<i></i>转发</span>
+          </li>
+          <!--文本-->
+          <li>
+            人生若只如初见，何事秋风悲画扇。人生若只如初见，何事秋风悲画扇。
+          </li>
+          <!--中间图片-->
+          <li class="picture">
+            <ul>
+              <li><img src="images/headImg01.png" alt=""/></li>
+              <li><img src="images/headImg01.png" alt=""/></li>
+              <li><img src="images/headImg01.png" alt=""/></li>
+              <li><img src="images/headImg01.png" alt=""/></li>
+              <li><img src="images/headImg01.png" alt=""/></li>
+              <li><img src="images/headImg01.png" alt=""/></li>
+            </ul>
+            <div style="clear: both"></div>
+          </li>
+          <!--点赞评论信息 di 4个 li-->
+          <li>
+            <ul>
+              <li>2小时前</li>
+              <li>删除</li>
+              <li>置顶</li>
+              <li><i></i>评论(22)</li>
+              <li><i></i>点赞(22)</li>
+            </ul>
+          </li>
+          <!--回复内容-->
+          <li class="reply">
+            <ul>
+              <li class="zan">
+                <i></i>张三、李四等
+              </li>
+              <li>张三：评论内容</li>
+              <li>张三：评论内容</li>
+              <li>李四回复张三：回复内容</li>
+              <li>张三：评论内容</li>
+              <li>李四回复张三：回复内容</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="adContent">
+      <!--头像-->
+    <span>
+      <img src="images/headImg01.png"/>
+    </span>
+      <!--内容-->
+      <div class="content">
+        <ol>
+          <!--用户名-->
+          <li>
+            人生若只如初见
+            <span class="userRedo"><a href="javascript:shield();">联系Ta</a>|<i></i>转发</span>
+          </li>
+          <!--文本-->
+          <li>
+            人生若只如初见，何事秋风悲画扇。人生若只如初见，何事秋风悲画扇。
+          </li>
+          <!--中间图片-->
+          <li class="picture">
+            <ul>
+              <li><img src="images/headImg01.png"/></li>
+              <li><img src="images/headImg01.png"/></li>
+              <li><img src="images/headImg01.png"/></li>
+              <li><img src="images/headImg01.png"/></li>
+              <li><img src="images/headImg01.png"/></li>
+              <li><img src="images/headImg01.png"/></li>
+            </ul>
+            <div style="clear: both"></div>
+          </li>
+          <!--点赞评论信息 di 4个 li-->
+          <li>
+            <ul>
+              <li>2小时前</li>
+              <li>删除</li>
+              <li>置顶</li>
+              <li><i></i>评论(22)</li>
+              <li><i></i>点赞(22)</li>
+            </ul>
+          </li>
+          <!--回复内容-->
+          <li class="reply">
+            <ul>
+              <li class="zan">
+                <i></i>张三、李四等
+              </li>
+              <li>张三：评论内容</li>
+              <li>张三：评论内容</li>
+              <li>李四回复张三：回复内容</li>
+              <li>张三：评论内容</li>
+              <li>李四回复张三：回复内容</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+
+  <!--//点击遮罩层，模态框-->
+  <div class="modalBox" id="modalBox">
+    <div class="smallBox"></div>
+    <div class="tigger" id="tigger">
+      <div class="smallTigger">二维码
+        <i id="guanbi"></i>
+      </div>
+      <div class="bigTigger">
+        <img src="images/ewm.png" alt=""/>
+
+        <p>长按保存到手机</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script>
+  //    模态框
+  function shield() {
+    var s = document.getElementById("modalBox");
+    s.style.display = "block";
+
+    var l = document.getElementById("tigger");
+    l.style.display = "block";
+    //点击按钮关闭
+
+    var guan = document.getElementById("guanbi");
+
+    guan.onclick = function () {
+      var s = document.getElementById("modalBox");
+      s.style.display = "none";
+
+      var l = document.getElementById("tigger");
+      l.style.display = "none";
+    }
+  }
+</script>
+</html>

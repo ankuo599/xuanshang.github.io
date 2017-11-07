@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>赏金咖-发布广告</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <!--标准mui.css-->
+  <link rel="stylesheet" href="css/mui.min.css">
+  <!--自定义CSS-->
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  <style>
+
+  </style>
+</head>
+
+<body>
+<form method="post" action="">
+  <!--发布广告-->
+  <div class="advertis">
+    <!--表头-->
+    <header class="top">
+      <div class="goback" style="position: relative;z-index: 10">
+        <a style="display: block;color: #fff;" href="javascript:;"><i></i>返回</a>
+      </div>
+      <h1>发布广告</h1>
+    </header>
+
+    <!--内容-->
+    <div class="contents">
+      <!--第一部分文本域输入-->
+      <div class="addText">
+        <textarea id="textarea">#在此编辑广告内容</textarea>
+        <div class="addimg">
+          <ul>
+            <li><input id="addimgBtn" multiple="multiple" type="file" accept="image/*;capture=camera"></li>
+          </ul>
+        </div>
+      </div>
+      <ul>
+        <li class="firstL">
+          <i></i>发布模式：<span>关注</span>
+        </li>
+        <li class="secondL">
+          距离
+          <span>2km</span>
+          <span class="active">5km</span>
+          <span>10km</span>
+          <span>不限</span>
+        </li>
+        <li class="thirdL">
+          任务分成份数
+          <span>+</span>
+          <input type="number" name="thirdW" value="600"/>
+          <span>-</span>
+
+          <div style="clear: both"></div>
+        </li>
+        <li class="fourL">
+          <p>预热时间：120min</p>
+
+          <p><i>VIP一级</i>服务费：15%</p>
+
+          <div>总计金额： <i>￥200</i></div>
+        </li>
+        <div style="clear: both"></div>
+      </ul>
+      <div class="footer">
+        <button type="submit">支付并发布</button>
+      </div>
+    </div>
+    <!--//遮罩层-->
+    <div class="zhe">
+      <!--<div class="showed"></div>-->
+      <div class="wenzi"><p>请先选择发布模式！</p></div>
+      <!--//下面列表选项-->
+      <div class="modeFooter">
+        <p>选择发布模式</p>
+        <ul>
+          <li>
+            <a href="javascript:;">
+              <img src="images/icon62.png">
+            </a>
+
+            <p>关注</p>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="images/icon63.png">
+            </a>
+
+            <p>任务</p>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="images/icon64.png">
+            </a>
+
+            <p>朋友圈</p>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="images/icon65.png">
+            </a>
+
+            <p>加粉</p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</form>
+
+</body>
+<script src="js/fastclick.js"></script>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  window.addEventListener('load', function() {
+    FastClick.attach(document.body);
+  }, false);
+  //为textarea设置focus属性
+  $("#textarea").focus(function(){
+    $(this).html("");
+  });
+  $("#textarea").blur(function(){
+    $(this).html("#在此编辑广告内容");
+  });
+  //点击模式
+  $(".modeFooter>ul>li").on("click", function () {
+    var index = $(this).index() + 1;
+    var html = $(".modeFooter>ul>li:nth-child(" + index + ") p").html();
+    $(".zhe").hide();
+    $(".advertis").css({position:"static"});
+    $(".firstL span").html(html);
+  });
+  //点击距离
+  $(".secondL span").click(function () {
+    $(this).addClass("active")
+      .siblings()
+      .removeClass("active");
+  });
+  //返回按钮
+  $(".goback").click(function(){
+    window.location.href = "index.html";
+  });
+  //增加 减少发布份数
+  $(".thirdL span").click(function () {
+    var ht = $(this).html();
+    var valu = $("input[name='thirdW']").val();
+    if (ht == "+") {
+      valu++;
+      $("input[name='thirdW']").val(valu);
+    }
+    else {
+      valu--;
+      $("input[name='thirdW']").val(valu);
+    }
+  });
+
+  //添加图片
+  var count = 0;
+  function readAsDataURL() {
+    
+    if (count >= 4) {
+      alert("最多只能上传四张图片...");
+
+      return;
+    }
+    //检验是否为图像文件
+    var file = document.getElementById("addimgBtn").files[0];
+    if (file == undefined) {
+      return;
+    }
+    if (!/image\/\w+/.test(file.type)) {
+      alert("请选择图片文件...");
+      return false;
+    }
+    var reader = new FileReader();
+    //将文件以Data URL形式读入页面
+    reader.readAsDataURL(file);
+    reader.onload = function (e) {
+      //显示文件
+      $(".addimg>ul").prepend("<li><img src='" + this.result + "'/></li>");
+      
+    }
+  }
+  $("#addimgBtn").change(function () {
+    readAsDataURL();
+  });
+
+</script>
+</html>
+
+
+
+
+
+

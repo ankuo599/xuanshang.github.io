@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>赏金咖-个人信息</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <!--标准mui.css-->
+  <link rel="stylesheet" href="css/mui.min.css">
+  <!--自定义CSS-->
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  <style>
+    header {
+      z-index: 21
+    }
+  </style>
+</head>
+
+<body>
+<!--个人中心-->
+<div class="pagePersonal">
+  <header class="mui-bar mui-bar-nav" style="z-index: 21">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left">返回</a>
+    <a class="save">保存</a>
+    <h1 class="mui-title">个人信息</h1>
+  </header>
+  <div class="mui-content">
+    <div class="section">
+      <div class="mohu">
+        <div class="coverag"></div>
+        <img src="images/ces.jpg" alt=""/>
+      </div>
+      <div class="headerImage">
+        <img src="images/prosonal.jpg" alt=""/>
+      </div>
+      <div class="nameLev">
+        <p>姓名</p>
+
+        <p>会员等级：<span>2222</span></p>
+      </div>
+    </div>
+    <div class="mui-content code">
+      <ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+        <li>
+          <p class="codeLeft">
+            <i></i>我的二维码
+          </p>
+
+          <p class="codeRight" id="looker">查看</p>
+        </li>
+        <li>
+          <p class="age codeLeft">
+            <i></i>年龄
+          </p>
+
+          <div style="line-height: 56px">
+            <!--1.11修改去掉岁-->
+            <!--<span>岁</span>-->
+            <p class="ageRight">
+              <select name="">
+                <option value="">18~25</option>
+                <option value="">26~30</option>
+                <option value="">31~35</option>
+                <option value="">36~45</option>
+                <option value="">45~60</option>
+              </select>
+            </p>
+          </div>
+        </li>
+        <li>
+          <p class="gender age codeLeft">
+            <i></i>性别
+          </p>
+
+          <p class="genderRight ageRight">
+            <select name="">
+              <option value="">男</option>
+              <option value="">女</option>
+            </select>
+          </p>
+        </li>
+        <li>
+          <p class="industry age codeLeft">
+            <i></i>行业
+          </p>
+
+          <p class="industryRight ageRight">
+            <select name="">
+              <option value="">医疗</option>
+              <option value="">教育</option>
+              <option value="">工薪</option>
+              <option value="">其它</option>
+            </select>
+          </p>
+        </li>
+        <!--<li class="diqu">-->
+        <!--<p class="region age codeLeft">-->
+        <!--<i></i>地区-->
+        <!--</p>-->
+        <!--<div>-->
+        <!--<p class="regionRight ageRight">-->
+        <!--<select name="">-->
+        <!--<option value="">金水区</option>-->
+        <!--<option value="">二七区</option>-->
+        <!--<option value="">高新区</option>-->
+        <!--<option value="">管城回族自治区</option>-->
+        <!--</select>-->
+        <!--</p>-->
+        <!--<p class="regionRight zz ageRight">-->
+        <!--<select name="">-->
+        <!--<option value="">新疆维吾尔族自治区</option>-->
+        <!--<option value="">北京市</option>-->
+        <!--<option value="">上海市</option>-->
+        <!--<option value="">其它地区</option>-->
+        <!--</select>-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--以上是 1.11 修改内容-->
+        <!--以下是 1.11 修改内容-->
+        <li class="diqu" style="height: 56px">
+          <p class="region age codeLeft">
+            <i></i>省份
+          </p>
+          <!--<div style="height: 0px margin-top:13px">-->
+          <p class="regionRight zz ageRight">
+            <select name="" style="margin-left: 0px;">
+              <option value="">新疆维吾尔族自治区</option>
+              <option value="">北京市</option>
+              <option value="">上海市</option>
+              <option value="">其它地区</option>
+            </select>
+          </p>
+          <!--</div>-->
+        </li>
+        <li class="diqu" style="height: 56px">
+          <p class="region age codeLeft">
+            <i></i>市区
+          </p>
+          <!--<div style="height: 0px margin-top:13px">-->
+          <p class="regionRight zz ageRight">
+            <select name="" style="margin-left: 0px;">
+              <option value="">新疆维吾尔族自治区</option>
+              <option value="">北京市</option>
+              <option value="">上海市</option>
+              <option value="">其它地区</option>
+            </select>
+          </p>
+          <!--</div>-->
+        </li>
+        <!--修改到此-->
+        <li>
+          <p class="like age codeLeft">
+            <i></i>喜好
+          </p>
+
+          <p class="likeRight ageRight">
+            <input type="text" value="读书、运动"/>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--//模态框  遮罩层-->
+  <div class="moreFriend" id="motai">
+    <div class="zheFriend" id="zheceng"></div>
+    <div class="zheBig">
+      <img src="images/ewm.png" alt=""/>
+
+      <p>扫描添加好友</p>
+    </div>
+  </div>
+
+</div>
+</body>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+<script>
+  //    模态框 二维码
+  (function ($, doc, $$) {
+    $.init();
+    mui('#section').scroll();
+    $.ready(function () {
+      $$("#looker").on('click', function () {
+        $$("#motai").css({display: "block"});
+        $$("#zheceng").css({display: "block"});
+      });
+      $$("#motai").on('click', function () {
+        $$("#motai").css({display: "none"});
+        $$("#zheceng").css({display: "none"});
+      });
+    });
+  })(mui, document, jQuery);
+</script>
+</html>
